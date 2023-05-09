@@ -26,4 +26,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('mahasiswas', MahasiswaController::class);
 
+Route::get('/mahasiswas/khs/{nim}', [MahasiswaController::class, 'khs'])->name('khs');
+
 
